@@ -1,0 +1,128 @@
+.footerWrapper {
+    padding: 72px;
+    padding-top: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    justify-content: start;
+
+    .mainLogo {
+        width: 283px;
+    }
+
+    .linkList {
+        display: flex;
+        justify-content: space-between;
+
+        .linksItem {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            .listTitle {
+                margin: 0;
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 16px;
+            }
+
+            .listItem {
+                font-size: 14px;
+                color: #000;
+                opacity: 50%;
+                text-decoration: none;
+            }
+        }
+    }
+
+    hr {
+        width: 100%;
+        border: solid 0.5px #ebebeb;
+    }
+
+    .iconsWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .govIcons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .otherIcons {
+            display: flex;
+            gap: 48px;
+            align-items: center;
+
+            .snIcons {
+                display: flex;
+                align-items: center;
+                gap: 23px;
+            }
+
+            .psIcons {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+            }
+        }
+    }
+
+    .footerText {
+        font-size: 14px;
+        color: #888888;
+    }
+}
+
+@media (max-width: 1160px) {
+    .footerWrapper {
+        padding: 16px;
+        padding-top: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .footerWrapper {
+        .mainLogo {
+            width: 209px;
+        }
+    
+        .linkList {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+    
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .footerWrapper {
+    
+        .linkList {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+        }
+    
+        .iconsWrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+    
+            .otherIcons {
+                display: flex;
+                flex-direction: column-reverse;
+                gap: 20px;
+    
+            }
+        }
+    }
+}

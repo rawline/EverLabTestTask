@@ -1,0 +1,93 @@
+.exchangeWrapper {
+    padding: 0 72px;
+    margin-bottom: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .mainTitle {
+        font-size: 56px;
+        line-height: 60px;
+        font-weight: 500;
+        margin-bottom: 40px;
+        text-align: center;
+        margin: 0;
+
+        span {
+            color: #4C9DE8;
+        }
+    }
+
+    .imagesWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+
+        .imageItem {
+            padding: 24px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #F8F8F8;
+            border-radius: 24px;
+        }
+
+        .itemTitle {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .itemSubtitle {
+            font-size: 18px;
+            line-height: 24px;
+            text-align: center;
+            color: #888888;
+        }
+    }
+
+    .sliderWrapper {
+        display: none;
+    }
+
+    .exchangeBtn {
+        padding: 16px 0;
+        color: white;
+        background-color: #4C9DE8;
+        outline: none;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 18px;
+        line-height: 24px;
+        width: 100%;
+    }
+
+    
+}
+
+@media (max-width: 1160px) {
+    .exchangeWrapper {
+        padding: 16px;
+        padding-top: 0;
+        margin-bottom: 80px;
+        gap: 24px;
+    
+        .mainTitle {
+            font-size: 32px;
+            line-height: 40px;
+        }
+    
+        .imagesWrapper {
+            gap: 16px;
+    
+            .itemTitle {
+                font-size: 20px;
+                line-height: 24px;
+                text-align: center;
+            }
+        }
+        
+    }
+}

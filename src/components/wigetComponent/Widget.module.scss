@@ -1,0 +1,238 @@
+.widgetWrapper {
+    width: 424px;
+    height: 425px;
+    padding: 16px 24px 24px 24px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: solid 1px #E4E4E4;
+    border-radius: 24px;
+
+    .widgetHeader {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 24px;
+        margin-bottom: 16px;
+
+        .tab {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 32px;
+            margin: 0;
+
+            &:first-child {
+                border-bottom: solid 3px #4C9DE8;
+            }
+        }
+    }
+
+    .inputsWrapper {
+        margin-bottom: 15px;
+
+        .currencyInput {
+            display: flex;
+    
+            .textInputWrapper {
+                padding:8px 16px;
+                box-sizing: border-box;
+                background-color: #FBFBFB;
+                border-radius: 8px 0 0 8px;
+                border: solid 1px #E4E4E4;
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+    
+                .labelInput {
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #888888;
+                }
+    
+                .textInput {
+                    font-size: 24px;
+                    line-height: 32px;
+                    font-weight: 400;
+                    border: none;
+                    background-color: #FBFBFB;
+                    outline: none;
+                }
+            }
+    
+            .currensySelect {
+                appearance: none;
+                border: 0;
+                outline: 0;
+                font: inherit;
+                padding: 20px 16px;
+                box-sizing: border-box;
+                background-color: #FBFBFB;
+                border-radius: 0 8px 8px 0;
+                border: solid 1px #E4E4E4;
+                border-left: none;
+                width: 40%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+    
+                .ticker {
+                    font-size: 24px;
+                    line-height: 32px;
+                    font-weight: 400;
+                }
+            }
+        }
+    
+        .textBetweenInputs {
+            display: flex;
+    
+            .dots {
+                margin: 0 12px;
+            }
+    
+            .text {
+                font-size: 12px;
+                line-height: 16px;
+                font-weight: 400;
+    
+                span {
+                    color: #888888;
+                    border-bottom: 1px #4C9DE8;
+                    border-bottom-style: dashed; 
+                }
+            }
+        }
+    }
+
+    .checkboxWrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 28px;
+
+        .checkboxLabel {
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 39px;
+            height: 19px;
+          }
+          
+          .switch input { 
+            opacity: 0;
+            width: 0;
+            height: 0;
+          }
+          
+          .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+          }
+          
+          .slider:before {
+            position: absolute;
+            content: "";
+            height: 13px;
+            width: 13px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+          }
+          
+          input:checked + .slider {
+            background-color: #2196F3;
+          }
+          
+          input:checked + .slider:before {
+            -webkit-transform: translateX(20px);
+            -ms-transform: translateX(20px);
+            transform: translateX(20px);
+          }
+          
+          .slider.round {
+            border-radius: 34px;
+          }
+          
+          .slider.round:before {
+            border-radius: 50%;
+          }
+    }
+
+    .widgetBtn {
+        padding: 12px 0;
+        width: 100%;
+        color: white;
+        font-size: 18px;
+        background-color: #4C9DE8;
+        outline: none;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .widgetWrapper {
+        width: auto;
+        height: 380px;
+        padding: 0 0 0 16px;
+    
+        .widgetHeader {
+            padding: 16px 20px 8px 24px;
+            margin-bottom: 16px;
+    
+            .tab {
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+    
+        .inputsWrapper {
+            margin-bottom: 16px;
+            padding: 0 16px;
+            box-sizing: border-box;
+    
+            .currencyInput {
+                display: flex;
+        
+                .textInputWrapper {
+                    padding: 8px 12px;
+        
+                    .labelInput {
+                        font-size: 12px;
+                        line-height: 16px;
+                    }
+        
+                    .textInput {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+        
+                .currensySelect {
+                    padding: 18px 16px;
+        
+                    .ticker {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    
+    }
+}

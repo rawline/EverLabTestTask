@@ -1,0 +1,67 @@
+* {
+    font-family: 'Roboto';
+}
+
+.header {
+    display: flex;
+    padding: 24px 72px;
+    box-sizing: border-box;
+    justify-content: space-between;
+
+    .headerMenu {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+        gap: 32px;
+
+    }
+
+    .headerLinks {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        gap: 32px;
+
+        .link {
+            font-size: 16px;
+            color: #01268A;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+
+    .headerBtn {
+        padding: 6px 24px;
+        color: white;
+        background-color: #4C9DE8;
+        outline: none;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    .burgerIcon {
+        display: none;
+    }
+}
+
+@media (max-width: 1160px) {
+    .header {
+        display: flex;
+        padding: 24px 16px;
+
+        .burgerIcon {
+            display: block;
+        }
+    
+        .headerMenu {
+            display: none;
+        }
+
+    }
+}
